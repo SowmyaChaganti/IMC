@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatToolbarModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,25 +17,26 @@ import { CommentsComponent } from './comments/comments.component';
 import { UpdatesComponent } from './updates/updates.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    ImcHeaderComponent,
-    ImcNavComponent,
-    GeneralComponent,
-    DocumentsComponent,
-    StatusComponent,
-    TravelInfoComponent,
-    ImcInfoComponent,
-    NotificationsComponent,
-    CommentsComponent,
-    UpdatesComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		DashboardComponent,
+		ImcHeaderComponent,
+		ImcNavComponent,
+		GeneralComponent,
+		DocumentsComponent,
+		StatusComponent,
+		TravelInfoComponent,
+		ImcInfoComponent,
+		NotificationsComponent,
+		CommentsComponent,
+		UpdatesComponent
+	],
+	imports: [
+		BrowserModule,
+		MatToolbarModule,
+		AppRoutingModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
