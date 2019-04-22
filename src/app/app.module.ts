@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatToolbarModule, MatListModule, MatCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatFileUploadModule } from 'angular-material-fileupload';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { WguInfoComponent } from './wgu-info/wgu-info.component';
 import { ContactDetailsComponent } from './contact-details/contact-details.component';
 import { ImcFaqComponent } from './imc-faq/imc-faq.component';
 import { ImcRequestComponent } from './imc-request/imc-request.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 @NgModule({
 	declarations: [
@@ -36,12 +38,14 @@ import { ImcRequestComponent } from './imc-request/imc-request.component';
 		WguInfoComponent,
 		ContactDetailsComponent,
 		ImcFaqComponent,
-		ImcRequestComponent
+		ImcRequestComponent,
+		FileUploadComponent
 	],
 	imports: [
 		BrowserModule,
 		FlexLayoutModule,
 		MatCardModule,
+		MatFileUploadModule,
 		MatListModule,
 		MatToolbarModule,
 		AppRoutingModule,
