@@ -1,12 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <imc-header></imc-header>
 
-<div fxLayout="row" fxLayoutAlign="space-between" >
+<div class="main" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="12px" >
 	<imc-nav fxFlex="25" ></imc-nav>
 	
-	<div fxFlex="60" >
+	<mat-card fxFlex="50" >
 		<router-outlet></router-outlet>
-	</div>
+	</mat-card>
 	
 	<imc-info fxFlex="25" ></imc-info>
 </div>

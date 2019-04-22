@@ -8,6 +8,10 @@ import { TravelInfoComponent } from './travel-info/travel-info.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { CommentsComponent } from './comments/comments.component';
 import { UpdatesComponent } from './updates/updates.component';
+import { WguInfoComponent } from './wgu-info/wgu-info.component';
+import { ContactDetailsComponent } from './contact-details/contact-details.component';
+import { ImcFaqComponent } from './imc-faq/imc-faq.component';
+import { ImcRequestComponent } from './imc-request/imc-request.component';
 
 const routes: Routes = [
 	{ path: '', pathMatch: 'full', redirectTo: 'dashboard' },
@@ -19,6 +23,10 @@ const routes: Routes = [
 		{ path: 'notifications', component: NotificationsComponent, },
 		{ path: 'comments', component: CommentsComponent, },
 		{ path: 'updates', component: UpdatesComponent, },
+		{ path: 'wgu-info', component: WguInfoComponent, },
+		{ path: 'contact-details', component: ContactDetailsComponent, },
+		{ path: 'faq', component: ImcFaqComponent, },
+		{ path: 'request', component: ImcRequestComponent, },
 	] },
 ];
 
