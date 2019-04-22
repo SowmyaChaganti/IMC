@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule } from '@angular/material';
+import { MatToolbarModule, MatListModule } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +34,8 @@ import { UpdatesComponent } from './updates/updates.component';
 	],
 	imports: [
 		BrowserModule,
+		FlexLayoutModule,
+		MatListModule,
 		MatToolbarModule,
 		AppRoutingModule,
 	],

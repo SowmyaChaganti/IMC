@@ -1,8 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <imc-header></imc-header>
 
-<imc-nav></imc-nav>
-
-<router-outlet></router-outlet>
-
-<imc-info></imc-info>
+<div fxLayout="row" fxLayoutAlign="space-between" >
+	<imc-nav fxFlex="20" ></imc-nav>
+	
+	<div fxFlex="60" >
+		<router-outlet></router-outlet>
+	</div>
+	
+	<imc-info fxFlex="20" ></imc-info>
+</div>
