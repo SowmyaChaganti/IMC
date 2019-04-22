@@ -7,10 +7,10 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "sass"
+          "style": "scss"
         }
       },
       "architect": {
@@ -136,5 +136,10 @@
       }
     }
   },
-  "defaultProject": "imc"
+  "defaultProject": "imc",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
