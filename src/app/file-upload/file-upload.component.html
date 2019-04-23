@@ -1,0 +1,11 @@
+<div class="pad_3l pad_t">
+        <label for="singleFile">Upload Documents</label>
+        <input id="singleFile" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
+        <br> 
+         
+        <mat-file-upload-queue #fileUploadQueue
+            [fileAlias]="'file'">
+         
+            <mat-file-upload [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index"></mat-file-upload>
+        </mat-file-upload-queue>
+</div>

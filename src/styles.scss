@@ -1,4 +1,5 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 mat-card {
 	margin: 12px;
@@ -6,4 +7,18 @@ mat-card {
 
 .strong{
 	font-weight: bold;
+}
+
+.pad_l{
+	padding-left: 1em;
+}
+.pad_3l{
+	padding-left: 3em;
+}
+.pad_6l{
+	padding-left: 6em;
+}
+
+.pad_t{
+	padding-top: 1em;
 }
