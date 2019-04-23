@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule, MatListModule, MatCardModule } from '@angular/material';
+import { MatToolbarModule, MatListModule, MatCardModule, MatExpansionModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFileUploadModule } from 'angular-material-fileupload';
 
@@ -43,8 +44,10 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 	],
 	imports: [
 		BrowserModule,
+		BrowserAnimationsModule,
 		FlexLayoutModule,
 		MatCardModule,
+		MatExpansionModule,
 		MatFileUploadModule,
 		MatListModule,
 		MatToolbarModule,
