@@ -12,4 +12,8 @@ export class ImcRequestComponent implements OnInit {
   ngOnInit() {
   }
 
+  formSubmit(){
+    alert("Your request has been submitted!");
+  }
+
 }

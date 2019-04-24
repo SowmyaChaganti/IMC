@@ -5,11 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './file-upload.component.html',
   styleUrls: ['./file-upload.component.scss']
 })
-export class FileUploadComponent implements OnInit {
 
+export class FileUploadComponent implements OnInit {
+  
   constructor() { }
 
   ngOnInit() {
+  }
+
+  uploadFile(){
+    alert("Uploading Documents..");
   }
 
 }
