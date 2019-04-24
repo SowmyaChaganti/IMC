@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AuthService } from './auth.service';
+// import { AuthService } from './auth.service';
 
 @NgModule({
 	declarations: [],
@@ -13,7 +13,7 @@ import { AuthService } from './auth.service';
 		AngularFirestoreModule,
 	],
 	providers: [
-		AuthService,
+		// AuthService,
 	]
 })
 export class CoreModule { }
