@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule, MatListModule, MatCardModule, MatExpansionModule, MatButtonModule, MatTableModule, MatIconModule } from '@angular/material';
+import { MatToolbarModule, MatListModule, MatCardModule, MatExpansionModule, MatButtonModule, MatTableModule, MatIconModule, MatFormFieldModule, MatInputModule, MatStepperModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFileUploadModule } from 'angular-material-fileupload';
 
@@ -22,6 +22,8 @@ import { ContactDetailsComponent } from './contact-details/contact-details.compo
 import { ImcFaqComponent } from './imc-faq/imc-faq.component';
 import { ImcRequestComponent } from './imc-request/imc-request.component';
 import { FileUploadComponent } from './file-upload/file-upload.component';
+import { ImcFooterComponent } from './imc-footer/imc-footer.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 @NgModule({
 	declarations: [
@@ -40,17 +42,22 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
 		ContactDetailsComponent,
 		ImcFaqComponent,
 		ImcRequestComponent,
-		FileUploadComponent
+		FileUploadComponent,
+		ImcFooterComponent,
+		StepperComponent
 	],
 	imports: [
 		BrowserModule,
 		BrowserAnimationsModule,
 		FlexLayoutModule,
+		MatButtonModule,
 		MatCardModule,
 		MatExpansionModule,
 		MatFileUploadModule,
-		MatButtonModule,
+		MatFormFieldModule,
+		MatInputModule,
 		MatListModule,
+		MatStepperModule,
 		MatToolbarModule,
 		AppRoutingModule,
 		MatTableModule,
