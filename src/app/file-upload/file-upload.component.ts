@@ -15,6 +15,6 @@ export class FileUploadComponent implements OnInit {
 
   uploadFile(){
     alert("Uploading Documents..");
-  }
+  } 
 
 }

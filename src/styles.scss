@@ -1,24 +1,39 @@
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 mat-card {
 	margin: 12px;
 }
 
-.strong{
+.strong {
 	font-weight: bold;
 }
 
-.pad_l{
+.pad_l {
 	padding-left: 1em;
 }
-.pad_3l{
+.pad_3l {
 	padding-left: 3em;
 }
-.pad_6l{
+.pad_6l {
 	padding-left: 6em;
 }
 
-.pad_t{
+.pad_t {
 	padding-top: 1em;
+}
+
+imc-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+body {
+	padding-bottom: 64px;
+}
+
+.mat-step {
+    // flex-grow: 1;
+    width: 50%;
 }
